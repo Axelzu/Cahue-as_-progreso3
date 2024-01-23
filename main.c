@@ -17,7 +17,7 @@ int main() {
     printf("Ingrese el número de estudiantes: ");
     scanf("%d", &numEstudiantes);
 
-    // sirve para poder abrir el archivo y se guarden los datos
+    // sirve para poder abrir el archivo y se guarden los datos dentro de un archivo llamado: 
     archivo = fopen("datos_alumnos.txt", "w");
 
     // aqui para poder verificar si el archivo se abrio correctamente
@@ -50,12 +50,12 @@ int main() {
         fprintf(archivo, "Nombre: %s\t", alumno.nombre);
         fprintf(archivo, "Dirección: %s\t", alumno.direccion);
         fprintf(archivo, "Materia: %s\t", alumno.materia);
-        fprintf(archivo, "Nota: %.2f\n\n", alumno.nota);
+        fprintf(archivo, "Nota: %.2f\n\n", alumno.nota); //el %.2f es para poner la nota con decimales ejem: 10=10.00
     }
     // sirve poara poder cerrar el archivo
     fclose(archivo);
 
-    // aqui es solo para mostrar que el archivo salio bien y se ha guardado en archivo txt
+    // aqui es lo para mostrar que el archivo salio bien y se ha guardado en archivo txt
     printf("\nLos datos se han guardado en el archivo datos_alumnos.txt.\n");
 
     
