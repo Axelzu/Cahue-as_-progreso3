@@ -52,6 +52,11 @@ int main() {
         fprintf(archivo, "Materia: %s\t", alumno.materia);
         fprintf(archivo, "Nota: %.2f\n\n", alumno.nota);
     }
+    // sirve poara poder cerrar el archivo
+    fclose(archivo);
+
+    // aqui es solo para mostrar que el archivo salio bien y se ha guardado en archivo txt
+    printf("\nLos datos se han guardado en el archivo datos_alumnos.txt.\n");
 
     
     return 0;
